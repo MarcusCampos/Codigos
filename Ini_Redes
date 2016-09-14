@@ -1,0 +1,13 @@
+class Servidor{
+    
+  // Métodos e Funções 
+  void AjustaRequisição(Thread t, int portaNova){
+    Thread tratamtento = nre Thread ();
+    
+  }
+  void logFile(){
+    File log = new File();
+    FileOutputStream logout = FileOutputStream;
+    
+  }
+}
