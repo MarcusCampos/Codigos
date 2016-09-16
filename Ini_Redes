@@ -11,3 +11,5 @@ class Servidor{
     
   }
 }
+
+//https://www.w3.org/Protocols/HTTP/1.0/spec.html
