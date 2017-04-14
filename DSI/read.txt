@@ -1,0 +1,38 @@
+Remote Method Invocation
+
+Compilando o projeto
+
+javac src/br/usp/each/PartRepositoryInterface.java -cp src -d bin
+javac src/br/usp/each/Server.java -cp src -d bin
+javac src/br/usp/each/console/Console.java -cp src -d bin
+rmic -classpath bin -d bin br.usp.each.PartRepository
+Executando
+
+cd bin
+start rmiregistry
+cd ..
+java -cp bin br.usp.each.Server [NOME DO REPOSITORIO]
+java -cp bin br.usp.each.console.Console [NOME DO REPOSITORIO]
+Comandos
+
+repositorio
+
+Repositório de peças
+Nome: [NOME DO REPOSITÓRIO]
+Quantidade de peças: [NÚMERO]
+peca
+peças
+
+1: [NOME DA PEÇA] | [UUID DA PEÇA]
+2: [NOME DA PEÇA] | [UUID DA PEÇA]
+peça [UUID DA PEÇA]
+
+Peça
+Nome: [NOME DA PEÇA]
+Descrição: [DESCRIÇÃO]
+Tipo: [PRIMITIVA | COMPOSTA]
+Quantidade de subpeças: [NÚMERO DE SUBPEÇAS]
+
+Subpeças:
+1: [NOME DA PEÇA] | [UUID DA PEÇA]
+2: [NOME DA PEÇA] | [UUID DA PEÇA]
